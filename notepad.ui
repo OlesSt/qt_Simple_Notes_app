@@ -18,7 +18,7 @@
   </property>
   <property name="windowIcon">
    <iconset resource="res.qrc">
-    <normaloff>:/Icons/Icons/nodepad.png</normaloff>:/Icons/Icons/nodepad.png</iconset>
+    <normaloff>:/Images/Icons/nodepad.png</normaloff>:/Images/Icons/nodepad.png</iconset>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QTextEdit" name="textEdit">
@@ -124,7 +124,7 @@
   <action name="actionNew">
    <property name="icon">
     <iconset resource="res.qrc">
-     <normaloff>:/Icons/Icons/new.png</normaloff>:/Icons/Icons/new.png</iconset>
+     <normaloff>:/Images/Icons/new.png</normaloff>:/Images/Icons/new.png</iconset>
    </property>
    <property name="text">
     <string>New</string>
@@ -136,7 +136,7 @@
   <action name="actionOpen">
    <property name="icon">
     <iconset resource="res.qrc">
-     <normaloff>:/Icons/Icons/open.png</normaloff>:/Icons/Icons/open.png</iconset>
+     <normaloff>:/Images/Icons/open.png</normaloff>:/Images/Icons/open.png</iconset>
    </property>
    <property name="text">
     <string>Open</string>
@@ -148,7 +148,7 @@
   <action name="actionSave">
    <property name="icon">
     <iconset resource="res.qrc">
-     <normaloff>:/Icons/Icons/save.png</normaloff>:/Icons/Icons/save.png</iconset>
+     <normaloff>:/Images/Icons/save.png</normaloff>:/Images/Icons/save.png</iconset>
    </property>
    <property name="text">
     <string>Save</string>
@@ -160,7 +160,7 @@
   <action name="actionSave_As">
    <property name="icon">
     <iconset resource="res.qrc">
-     <normaloff>:/Icons/Icons/save.png</normaloff>:/Icons/Icons/save.png</iconset>
+     <normaloff>:/Images/Icons/save.png</normaloff>:/Images/Icons/save.png</iconset>
    </property>
    <property name="text">
     <string>Save As</string>
@@ -172,7 +172,7 @@
   <action name="actionExport_PDF">
    <property name="icon">
     <iconset resource="res.qrc">
-     <normaloff>:/Icons/Icons/pdf.png</normaloff>:/Icons/Icons/pdf.png</iconset>
+     <normaloff>:/Images/Icons/pdf.png</normaloff>:/Images/Icons/pdf.png</iconset>
    </property>
    <property name="text">
     <string>Export PDF</string>
@@ -184,7 +184,7 @@
   <action name="actionExit">
    <property name="icon">
     <iconset resource="res.qrc">
-     <normaloff>:/Icons/Icons/exit.png</normaloff>:/Icons/Icons/exit.png</iconset>
+     <normaloff>:/Images/Icons/exit.png</normaloff>:/Images/Icons/exit.png</iconset>
    </property>
    <property name="text">
     <string>Exit</string>
@@ -193,7 +193,7 @@
   <action name="actionCopy">
    <property name="icon">
     <iconset resource="res.qrc">
-     <normaloff>:/Icons/Icons/copy.png</normaloff>:/Icons/Icons/copy.png</iconset>
+     <normaloff>:/Images/Icons/copy.png</normaloff>:/Images/Icons/copy.png</iconset>
    </property>
    <property name="text">
     <string>Copy</string>
@@ -205,7 +205,7 @@
   <action name="actionCut">
    <property name="icon">
     <iconset resource="res.qrc">
-     <normaloff>:/Icons/Icons/cut.png</normaloff>:/Icons/Icons/cut.png</iconset>
+     <normaloff>:/Images/Icons/cut.png</normaloff>:/Images/Icons/cut.png</iconset>
    </property>
    <property name="text">
     <string>Cut</string>
@@ -217,7 +217,7 @@
   <action name="actionPaste">
    <property name="icon">
     <iconset resource="res.qrc">
-     <normaloff>:/Icons/Icons/paste.png</normaloff>:/Icons/Icons/paste.png</iconset>
+     <normaloff>:/Images/Icons/paste.png</normaloff>:/Images/Icons/paste.png</iconset>
    </property>
    <property name="text">
     <string>Paste</string>
@@ -229,7 +229,7 @@
   <action name="actionUndo">
    <property name="icon">
     <iconset resource="res.qrc">
-     <normaloff>:/Icons/Icons/undo.png</normaloff>:/Icons/Icons/undo.png</iconset>
+     <normaloff>:/Images/Icons/undo.png</normaloff>:/Images/Icons/undo.png</iconset>
    </property>
    <property name="text">
     <string>Undo</string>
@@ -241,7 +241,7 @@
   <action name="actionRedo">
    <property name="icon">
     <iconset resource="res.qrc">
-     <normaloff>:/Icons/Icons/redo.png</normaloff>:/Icons/Icons/redo.png</iconset>
+     <normaloff>:/Images/Icons/redo.png</normaloff>:/Images/Icons/redo.png</iconset>
    </property>
    <property name="text">
     <string>Redo</string>
@@ -253,7 +253,7 @@
   <action name="actionBold">
    <property name="icon">
     <iconset resource="res.qrc">
-     <normaloff>:/Icons/Icons/bold.png</normaloff>:/Icons/Icons/bold.png</iconset>
+     <normaloff>:/Images/Icons/bold.png</normaloff>:/Images/Icons/bold.png</iconset>
    </property>
    <property name="text">
     <string>Bold</string>
@@ -262,7 +262,7 @@
   <action name="actionItalic">
    <property name="icon">
     <iconset resource="res.qrc">
-     <normaloff>:/Icons/Icons/italic.png</normaloff>:/Icons/Icons/italic.png</iconset>
+     <normaloff>:/Images/Icons/italic.png</normaloff>:/Images/Icons/italic.png</iconset>
    </property>
    <property name="text">
     <string>Italic</string>
@@ -271,7 +271,7 @@
   <action name="actionUnderline">
    <property name="icon">
     <iconset resource="res.qrc">
-     <normaloff>:/Icons/Icons/underline.png</normaloff>:/Icons/Icons/underline.png</iconset>
+     <normaloff>:/Images/Icons/underline.png</normaloff>:/Images/Icons/underline.png</iconset>
    </property>
    <property name="text">
     <string>Underline</string>
@@ -280,7 +280,7 @@
   <action name="actionLeft">
    <property name="icon">
     <iconset resource="res.qrc">
-     <normaloff>:/Icons/Icons/left.png</normaloff>:/Icons/Icons/left.png</iconset>
+     <normaloff>:/Images/Icons/left.png</normaloff>:/Images/Icons/left.png</iconset>
    </property>
    <property name="text">
     <string>Left</string>
@@ -289,7 +289,7 @@
   <action name="actionRight">
    <property name="icon">
     <iconset resource="res.qrc">
-     <normaloff>:/Icons/Icons/right.png</normaloff>:/Icons/Icons/right.png</iconset>
+     <normaloff>:/Images/Icons/right.png</normaloff>:/Images/Icons/right.png</iconset>
    </property>
    <property name="text">
     <string>Right</string>
@@ -298,7 +298,7 @@
   <action name="actionCenter">
    <property name="icon">
     <iconset resource="res.qrc">
-     <normaloff>:/Icons/Icons/center.png</normaloff>:/Icons/Icons/center.png</iconset>
+     <normaloff>:/Images/Icons/center.png</normaloff>:/Images/Icons/center.png</iconset>
    </property>
    <property name="text">
     <string>Center</string>
@@ -307,7 +307,7 @@
   <action name="actionFont">
    <property name="icon">
     <iconset resource="res.qrc">
-     <normaloff>:/Icons/Icons/font.png</normaloff>:/Icons/Icons/font.png</iconset>
+     <normaloff>:/Images/Icons/font.png</normaloff>:/Images/Icons/font.png</iconset>
    </property>
    <property name="text">
     <string>Font</string>
@@ -316,7 +316,7 @@
   <action name="actionColor">
    <property name="icon">
     <iconset resource="res.qrc">
-     <normaloff>:/Icons/Icons/color.png</normaloff>:/Icons/Icons/color.png</iconset>
+     <normaloff>:/Images/Icons/color.png</normaloff>:/Images/Icons/color.png</iconset>
    </property>
    <property name="text">
     <string>Color</string>
@@ -325,7 +325,7 @@
   <action name="actionAbout">
    <property name="icon">
     <iconset resource="res.qrc">
-     <normaloff>:/Icons/Icons/about.png</normaloff>:/Icons/Icons/about.png</iconset>
+     <normaloff>:/Images/Icons/about.png</normaloff>:/Images/Icons/about.png</iconset>
    </property>
    <property name="text">
     <string>About</string>
