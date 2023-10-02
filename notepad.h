@@ -43,21 +43,20 @@ public slots:
     void actionRedo();
 
     // menuBar - FORMAT:
-//    void actionBold();
-//    void actionItalic();
-//    void actionUnderline();
-//    void actionLeft();
-//    void actionRight();
-//    void actionCenter();
-//    void actionFont();
-//    void actionColor();
+    void actionBold();
+    void actionItalic();
+    void actionUnderline();
+    void actionLeft();
+    void actionRight();
+    void actionCenter();
+    void actionFont();
+    void actionColor();
 
+    void actionAbout();
 
 private:
     QString currentFile;
     Ui::MainWindow *ui;
-
-
 };
 
 #endif // NOTEPAD_H

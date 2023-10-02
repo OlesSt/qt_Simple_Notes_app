@@ -2,11 +2,9 @@
 #include "./ui_notepad.h"
 
 
-
 Notepad::Notepad(QWidget *parent)
 {
     this->resize(500, 500);
-
 
     ui = new Ui::MainWindow();
     ui->setupUi(this);
@@ -27,12 +25,16 @@ Notepad::Notepad(QWidget *parent)
     connect (ui->actionRedo,        SIGNAL(triggered()), this, SLOT(actionRedo()));
 
     // Connect actions of FORMAT menuBar
+    connect(ui->actionBold,         SIGNAL(triggered()), this, SLOT(actionBold()));
+    connect(ui->actionItalic,       SIGNAL(triggered()), this, SLOT(actionItalic()));
+    connect(ui->actionUnderline,    SIGNAL(triggered()), this, SLOT(actionUnderline()));
+    connect(ui->actionLeft,         SIGNAL(triggered()), this, SLOT(actionLeft()));
+    connect(ui->actionRight,        SIGNAL(triggered()), this, SLOT(actionRight()));
+    connect(ui->actionCenter,       SIGNAL(triggered()), this, SLOT(actionCenter()));
+    connect(ui->actionFont,         SIGNAL(triggered()), this, SLOT(actionFont()));
+    connect(ui->actionColor,        SIGNAL(triggered()), this, SLOT(actionColor()));
 
-
-
-
-
-
+    connect(ui->actionAbout,        SIGNAL(triggered()), this, SLOT(actionAbout()));
 }
 
 Notepad::~Notepad()
@@ -131,5 +133,76 @@ void Notepad::actionPaste() { ui->textEdit->paste();}
 void Notepad::actionUndo()  { ui->textEdit->undo();}
 
 void Notepad::actionRedo()  { ui->textEdit->redo();}
+
+void Notepad::actionBold()
+{
+    QTextCharFormat format;
+    QTextCursor cursor = ui->textEdit->textCursor();
+
+    format = cursor.charFormat();
+
+    if (format.fontWeight() == QFont::Bold)
+        {format.setFontWeight(QFont::Normal);}
+    else
+        {format.setFontWeight(QFont::Bold);}
+
+    cursor.setCharFormat(format);
+}
+
+void Notepad::actionItalic()
+{
+    QTextCharFormat format;
+    QTextCursor cursor = ui->textEdit->textCursor();
+
+    format = cursor.charFormat();
+
+    if (format.fontWeight() == QFont::StyleItalic)
+    {format.setFontWeight(QFont::Normal);}
+    else
+    {format.setFontWeight(QFont::StyleItalic);}
+
+    cursor.setCharFormat(format);
+}
+
+void Notepad::actionUnderline()
+{
+    QTextCharFormat format;
+    QTextCursor cursor = ui->textEdit->textCursor();
+
+    format = cursor.charFormat();
+
+    if (format.fontWeight() == QFont::UnderlineResolved)
+    {format.setFontWeight(QFont::Normal);}
+    else
+    {format.setFontWeight(QFont::UnderlineResolved);}
+
+    cursor.setCharFormat(format);
+}
+
+void Notepad::actionLeft()  { ui->textEdit->setAlignment(Qt::AlignmentFlag::AlignLeft);}
+
+void Notepad::actionRight() { ui->textEdit->setAlignment(Qt::AlignmentFlag::AlignRight);}
+
+void Notepad::actionCenter() { ui->textEdit->setAlignment(Qt::AlignmentFlag::AlignCenter);}
+
+void Notepad::actionFont()
+{
+    bool ok;
+    QFont font = QFontDialog::getFont(&ok, this);
+    if (ok)
+        ui->textEdit->setFont(font);
+}
+
+void Notepad::actionColor()
+{
+    QColor color = QColorDialog::getColor();
+    ui->textEdit->setTextColor(color);
+}
+
+void Notepad::actionAbout()
+{
+    QMessageBox::about(this, "About", "This is a simple notepad. Made by Oles Stepanov with QT6 in C++ as part of Qt6 and C++ courses.");
+}
+
 
 
