@@ -19,6 +19,8 @@ add_executable(gt_Simple_Notes_app
   notepad.cpp
   notepad.ui
 
+  res.qrc
+
 
 )
 target_link_libraries(gt_Simple_Notes_app Qt${QT_VERSION_MAJOR}::Core Qt${QT_VERSION_MAJOR}::Widgets Qt${QT_VERSION_MAJOR}::PrintSupport)
