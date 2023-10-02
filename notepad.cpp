@@ -12,12 +12,21 @@ Notepad::Notepad(QWidget *parent)
     ui->setupUi(this);
 
     // Connect actions of FILE menuBar
-    connect(ui->actionNew, SIGNAL(triggered()), this, SLOT(actionNew()));
-    connect(ui->actionOpen, SIGNAL(triggered()), this, SLOT(actionOpen()));
-    connect(ui->actionSave, SIGNAL(triggered()), this, SLOT(actionSave()));
-    connect(ui->actionSave_As, SIGNAL(triggered()), this, SLOT(actionSaveAs()));
-    connect(ui->actionExport_PDF, SIGNAL(triggered()), this, SLOT(actionExportPDF()));
-    connect(ui->actionExit, SIGNAL(triggered()), this, SLOT(actionExit()));
+    connect (ui->actionNew,         SIGNAL(triggered()), this, SLOT(actionNew()));
+    connect (ui->actionOpen,        SIGNAL(triggered()), this, SLOT(actionOpen()));
+    connect (ui->actionSave,        SIGNAL(triggered()), this, SLOT(actionSave()));
+    connect (ui->actionSave_As,     SIGNAL(triggered()), this, SLOT(actionSaveAs()));
+    connect (ui->actionExport_PDF,  SIGNAL(triggered()), this, SLOT(actionExportPDF()));
+    connect (ui->actionExit,        SIGNAL(triggered()), this, SLOT(actionExit()));
+
+    // Connect actions of EDIT menuBar
+    connect (ui->actionCopy,        SIGNAL(triggered()), this, SLOT(actionCopy()));
+    connect (ui->actionCut,         SIGNAL(triggered()), this, SLOT(actionCut()));
+    connect (ui->actionPaste,       SIGNAL(triggered()), this, SLOT(actionPaste()));
+    connect (ui->actionUndo,        SIGNAL(triggered()), this, SLOT(actionUndo()));
+    connect (ui->actionRedo,        SIGNAL(triggered()), this, SLOT(actionRedo()));
+
+    // Connect actions of FORMAT menuBar
 
 
 
@@ -111,7 +120,16 @@ void Notepad::actionExportPDF()
     }
 }
 
-void Notepad::actionExit()
-{
-    QApplication::quit();
-}
+void Notepad::actionExit()  { QApplication::quit();}
+
+void Notepad::actionCopy()  { ui->textEdit->copy();}
+
+void Notepad::actionCut()   { ui->textEdit->cut();}
+
+void Notepad::actionPaste() { ui->textEdit->paste();}
+
+void Notepad::actionUndo()  { ui->textEdit->undo();}
+
+void Notepad::actionRedo()  { ui->textEdit->redo();}
+
+

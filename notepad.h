@@ -36,11 +36,11 @@ public slots:
     void actionExit();
 
     // menuBar - EDIT:
-//    void actionCopy();
-//    void actionCut();
-//    void actionPaste();
-//    void actionUndo();
-//    void actionRedo();
+    void actionCopy();
+    void actionCut();
+    void actionPaste();
+    void actionUndo();
+    void actionRedo();
 
     // menuBar - FORMAT:
 //    void actionBold();
